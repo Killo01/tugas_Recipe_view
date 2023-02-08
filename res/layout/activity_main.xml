@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/photo1" />
+
+                <TextView
+                    style="@style/TextContent.small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="#4D000000"
+                    android:drawableLeft="@drawable/wpf_stack_of_photos"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="1/3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Judul"
+                android:textColor="@android:color/black"
+                android:textSize="32sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#673AB7" />
+
+
+            <TextView
+                style="@style/TextContent.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resep dari : "
+                android:textSize="15dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/profil" />
+
+                <TextView
+                    style="@style/TextContent.small"
+                    android:id="@+id/profil_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_toRightOf="@+id/profile_image"
+                    android:text="Rakha Puteran"
+                    android:textSize="20dp" />
+
+                <TextView
+                    style="@style/TextContent.small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profile_image"
+                    android:layout_below="@+id/profil_name"
+                    android:text="@string/email"
+                    android:textSize="15dp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#673AB7" />
+
+            <TextView
+                style="@style/TextContent.small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Bahan Bahan :"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="#673AB7" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextContent.small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Pisang raja"/>
+
+                    <TextView
+                        style="@style/TextContent.subtittle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4 Buah"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextContent.small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Mentega"/>
+
+                    <TextView
+                        style="@style/TextContent.subtittle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1 Sendok Makan"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextContent.small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Meses"/>
+
+                    <TextView
+                        style="@style/TextContent.subtittle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1 Sendok makan"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextContent.small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Susu Kental Manis"/>
+
+                    <TextView
+                        style="@style/TextContent.subtittle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1 Sendok Makan"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextContent.small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Keju"/>
+
+                    <TextView
+                        style="@style/TextContent.subtittle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="35 Gram"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                style="@style/TextContent.small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Cara Membuat : "
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="#673AB7" />
+
+            <TextView
+                style="@style/TextContent.small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:text="@string/caraBuat1"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@drawable/langkah1" />
+
+            <TextView
+                style="@style/TextContent.small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:text="@string/caraBuat2"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/foto_langkah2"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@drawable/langkah2" />
+
+            <ImageView
+                android:layout_toRightOf="@+id/foto_langkah2"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@drawable/langkah3" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextContent.small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="10dp"
+                android:text="@string/caraBuat3"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@drawable/langkah4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#673AB7" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

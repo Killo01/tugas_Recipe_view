@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+    android:id="@+id/share"
+    android:icon="@drawable/icon_share"
+    app:showAsAction="ifRoom"
+    android:title="share">
+
+</item>
+
+    <item
+        android:id="@+id/bookmark"
+        android:icon="@drawable/icon_bookmark"
+        app:showAsAction="ifRoom"
+        android:title="bookmark">
+
+    </item>
+
+</menu>

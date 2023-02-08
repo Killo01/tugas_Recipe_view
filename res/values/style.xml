@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextContent" parent="@style/TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="TextContent.small">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextContent.subtittle">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+</resources>
+
